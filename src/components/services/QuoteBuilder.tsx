@@ -1,11 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { 
-  Slider as ShadcnSlider,
-  SliderRange,
-  SliderThumb,
-  SliderTrack 
-} from '@/components/ui/slider';
+import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { Button } from '@/components/ui/button';
@@ -55,7 +50,7 @@ const QuoteBuilder = () => {
             <Label htmlFor="pages" className="text-base font-medium">Number of Pages</Label>
             <span className="font-bold">{pages} {pages === 1 ? 'page' : 'pages'}</span>
           </div>
-          <ShadcnSlider
+          <Slider
             id="pages"
             min={3}
             max={15}
