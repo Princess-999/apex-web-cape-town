@@ -1,14 +1,27 @@
+
+# Allow crawling for most search engines
+User-agent: *
+Allow: /
+
+# Block development environments
+Disallow: /dev/
+Disallow: /staging/
+
+# Allow Googlebot full access
 User-agent: Googlebot
 Allow: /
 
+# Allow Bingbot full access
 User-agent: Bingbot
 Allow: /
 
+# Allow Twitterbot full access
 User-agent: Twitterbot
 Allow: /
 
+# Allow Facebook external crawler
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
-Allow: /
+# Sitemap location
+Sitemap: https://apexwebdesign.co.za/sitemap.xml
